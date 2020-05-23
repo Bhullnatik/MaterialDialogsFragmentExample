@@ -6,6 +6,25 @@
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryDark">@color/primaryDarkColor</item>
         <item name="colorAccent">@color/secondaryColor</item>
+
+        <item name="materialAlertDialogTheme">@style/Example.MaterialDialog</item>
+    </style>
+
+    <style name="Example.MaterialDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/Example.MaterialDialog.Title</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeDialog</item>
+    </style>
+
+    <style name="Example.MaterialDialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ShapeDialog">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
     </style>
 
 </resources>
